@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import BrandLogo from './brand-logo';
 
 const DynamicThemeSwitch = dynamic(() => import('./theme-switch'), {
   ssr: false,
@@ -13,13 +14,8 @@ export default function Header() {
           href='/'
           className='flex items-center gap-2 text-label-md text-text-strong-950'
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src='/images/logo.svg'
-            alt=''
-            className='size-9 object-contain'
-          />
-          AlignUI
+          <BrandLogo className='h-8 w-8' />
+          Yeatiqur Rahman
         </Link>
 
         <DynamicThemeSwitch />

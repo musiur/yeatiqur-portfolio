@@ -1,7 +1,7 @@
 const config = {
   arrowParens: 'always',
-  singleQuote: true,
-  jsxSingleQuote: true,
+  singleQuote: false,
+  jsxSingleQuote: false,
   tabWidth: 2,
   semi: true,
   printWidth: 80,
